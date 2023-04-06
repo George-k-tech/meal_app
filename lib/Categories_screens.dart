@@ -3,7 +3,6 @@ import './dummy_data.dart';
 import './category_item.dart';
 
 class CategoriesScreens extends StatelessWidget {
-  const CategoriesScreens({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -18,6 +17,8 @@ class CategoriesScreens extends StatelessWidget {
               (categoryData) => CategoryItems(
                 categoryData.title,
                 categoryData.color,
+                 categoryData.id,
+                 
               ),
             )
             .toList(),

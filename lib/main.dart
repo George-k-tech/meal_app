@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:meal_app/category_meals_screem.dart';
 import './Categories_screens.dart';
 
 void main() {
@@ -32,7 +33,10 @@ class MyApp extends StatelessWidget {
             ),
       ),
       //home is the first screen that is the root screen
-      home: const CategoriesScreens(),
+      home:  CategoriesScreens(),
+      routes: {
+        '/category-meals': (ctx) => CategoryMealScreen(),
+      },
     );
   }
 }
