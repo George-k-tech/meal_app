@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meal_app/category_meals_screem.dart';
-import './Categories_screens.dart';
+import './screens/categories.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -26,17 +26,13 @@ class MyApp extends StatelessWidget {
               ),
               bodyMedium: const TextStyle(color: Color.fromRGBO(20, 51, 51, 1)),
               titleLarge: const TextStyle(
-                fontSize: 20,
-                fontFamily: 'RobotoCondensed',
-                fontWeight:FontWeight.bold
-              ),
+                  fontSize: 20,
+                  fontFamily: 'RobotoCondensed',
+                  fontWeight: FontWeight.bold),
             ),
       ),
       //home is the first screen that is the root screen
-      home:  CategoriesScreens(),
-      routes: {
-        '/category-meals': (ctx) => CategoryMealScreen(),
-      },
+      home: const Categories()
     );
   }
 }
