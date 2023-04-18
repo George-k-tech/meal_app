@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import './screens/categories.dart';
+import 'package:meal_app/screens/tabs.dart';
+
 
 
 void main() {
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
             ),
       ),
       //home is the first screen that is the root screen
-      home: const Categories()
+      home: const TabsScreen()
     );
   }
 }
